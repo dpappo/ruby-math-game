@@ -19,5 +19,23 @@ equation = Equations.new
 
 game_state.new_game
 
-game_logic.turn
-equation.output_equation
+game_logic.turn_p1
+
+if equation.output_equation == true
+  player_one.lives = player_one.lives
+else
+  player_one.lives = player_one.lives - 1
+end
+
+game_state.lives_left(player_one.lives, player_two.lives)
+
+game_logic.turn_p2
+
+if equation.output_equation == true
+  player_two.lives = player_two.lives
+else
+  player_two.lives = player_two.lives - 1
+end
+
+game_state.lives_left(player_one.lives, player_two.lives)
+

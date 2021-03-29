@@ -7,10 +7,11 @@ class Game_Logic
     @p2_lives = player_two.lives
   end
 
-  def turn
+  def turn_p1
     puts "Player 1: "
-    
-
+  end
+  def turn_p2
+    puts "Player 2: "
   end
 
 

@@ -20,4 +20,8 @@ class Game
     puts "Womp womp, no bueno"
   end
 
+  def lives_left(one, two)
+    puts "P1: #{one}/3 vs P2: #{two}/3"
+  end
+
 end

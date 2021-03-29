@@ -1,5 +1,7 @@
 class Equations
 
+  attr_reader :was_correct
+
   def random_number
     rand(1..20)
   end
@@ -18,8 +20,10 @@ class Equations
     
     if input == answer
       puts "That's right, you got it!"
+      true
     else
       puts "Womp womp, no bueno"
+      false
     end
 
   end
